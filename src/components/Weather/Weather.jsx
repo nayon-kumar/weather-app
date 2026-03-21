@@ -13,27 +13,24 @@ const Weather = () => {
       <div className="text-center mt-3">
         <h1 className="text-3xl sm:text-4xl font-bold">30 °C</h1>
         <h3 className="text-2xl sm:text-2.5xl mt-2 font-semibold">London</h3>
+        <p className="mt-2">Wind Spreed: 3.6 Km/h</p>
       </div>
-      <div className="flex items-center justify-between mt-8">
-        <div className="flex gap-3 items-center">
-          <div>
-            <img className="w-6" src={humidity} alt="humidity" />
-          </div>
-          <div>
-            <h4>Humidity</h4>
-            <h3>91%</h3>
-          </div>
+      <h3 className="text-center my-5 text-2xl font-bold">Forecasts</h3>
+      <div className="grid grid-cols-3 items-center justify-between gap-3">
+        <div className="bg-[#f39c12] p-2 rounded-md text-center">
+          <h3>Day 1</h3>
+          <h1 className="text-xl font-bold">30 °C</h1>
+          <h3 className="font-bold">14 km/h</h3>
         </div>
-        <div className="flex gap-3 items-center">
-          <div>
-            <img className="w-6" src={wind} alt="wind" />
-          </div>
-          <div>
-            <div>
-              <h4>Wind Spreed</h4>
-              <h3>3.6 Km/h</h3>
-            </div>
-          </div>
+        <div className="bg-[#f39c12] p-2 rounded-md text-center">
+          <h3>Day 1</h3>
+          <h1 className="text-xl font-bold">30 °C</h1>
+          <h3 className="font-bold">14 km/h</h3>
+        </div>
+        <div className="bg-[#f39c12] p-2 rounded-md text-center">
+          <h3>Day 1</h3>
+          <h1 className="text-xl font-bold">30 °C</h1>
+          <h3 className="font-bold">14 km/h</h3>
         </div>
       </div>
     </div>
