@@ -5,7 +5,7 @@ const SearchBar = () => {
   return (
     <div className="flex items-center justify-center gap-2">
       <input
-        className="bg-white rounded-full text-gray-500 py-2 px-5"
+        className="bg-white rounded-full text-black py-2 px-5"
         type="text"
         placeholder="Search"
       />
