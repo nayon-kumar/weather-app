@@ -5,6 +5,7 @@ import axios from "axios";
 
 const WeatherContainer = () => {
   const [weatherData, setWeatherData] = useState(null);
+  const [city, setCity] = useState("");
 
   const featchWeather = async (city = "Dhaka") => {
     try {
@@ -17,8 +18,8 @@ const WeatherContainer = () => {
 
   return (
     <div className="bg-blue-800 text-white max-w-[95%] sm:max-w-150 mx-auto px-5 sm:px-10 py-10 sm:py-20 rounded-2xl">
-      <SearchBar featchWeather={featchWeather} />
-      <Weather weatherData={weatherData} />
+      <SearchBar featchWeather={featchWeather} city={city} setCity={setCity} />
+      <Weather weatherData={weatherData} city={city} />
     </div>
   );
 };

@@ -1,9 +1,6 @@
-import React, { useState } from "react";
 import { Search } from "lucide-react";
 
-const SearchBar = ({ featchWeather }) => {
-  const [city, setCity] = useState("Dhaka");
-
+const SearchBar = ({ featchWeather, city, setCity }) => {
   const handleSearch = () => {
     if (city.trim() !== "") {
       featchWeather(city);
