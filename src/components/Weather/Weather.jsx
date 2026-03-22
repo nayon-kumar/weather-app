@@ -4,6 +4,7 @@ import cloud from "../../assets/Weather/cloud.png";
 import rain from "../../assets/Weather/rain.png";
 
 const Weather = ({ weatherData, myCity, loading }) => {
+  console.log(weatherData);
   if (loading) {
     return (
       <div className="flex justify-center mt-10">
