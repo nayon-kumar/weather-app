@@ -4,6 +4,9 @@ const SearchBar = ({ featchWeather, city, setCity }) => {
   const handleSearch = () => {
     if (city.trim() !== "") {
       featchWeather(city);
+      setCity("");
+    } else {
+      setCity("");
     }
   };
 
@@ -13,6 +16,7 @@ const SearchBar = ({ featchWeather, city, setCity }) => {
         className="bg-white rounded-full text-black py-2 px-5"
         type="text"
         placeholder="Search"
+        value={city}
         onChange={(e) => setCity(e.target.value)}
       />
       <div onClick={handleSearch}>

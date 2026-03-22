@@ -3,8 +3,14 @@ import clear from "../../assets/Weather/clear.png";
 import cloud from "../../assets/Weather/cloud.png";
 import rain from "../../assets/Weather/rain.png";
 
-const Weather = ({ weatherData, myCity }) => {
-  console.log(weatherData);
+const Weather = ({ weatherData, myCity, loading }) => {
+  if (loading) {
+    return (
+      <div className="flex justify-center mt-10">
+        <div className="w-10 h-10 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    );
+  }
   return (
     <div className="mt-5">
       <div className="flex flex-col items-center">
@@ -17,7 +23,9 @@ const Weather = ({ weatherData, myCity }) => {
                 ? rain
                 : weatherData?.description === "Patchy rain nearby"
                   ? rain
-                  : clear
+                  : weatherData?.description === "Light freezing rain"
+                    ? rain
+                    : clear
           }
           alt={weatherData?.description}
         />
