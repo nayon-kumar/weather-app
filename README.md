@@ -1,16 +1,37 @@
-# React + Vite
+# ☁️ Weather Forecast App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To show the live demo <a href="https://weather-app-phi-gold.vercel.app/">Click Here</a>
 
-Currently, two official plugins are available:
+The **Weather Forecast App** is a modern and interactive application built with **React** that allows users to **search for current weather conditions and forecasts** for any city.  
+It fetches real-time data and displays it with **dynamic visuals** and **responsive UI**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Technologies Used
 
-## React Compiler
+- **React.js** – Frontend framework
+- **JavaScript (ES6+)** – App logic and state management
+- **Tailwind CSS** – Styling and responsive design
+- **DaisyUI** – UI components
+- **Axios** – HTTP requests
+- **Lucide React** – Icons
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Search weather by city name
+- Display **current temperature**, **wind speed**, and **weather description**
+- Show **3-day forecast** with temperature and wind speed
+- Dynamic weather icons for clear, cloudy, and rainy conditions
+- Loading indicator while fetching data
+- Error handling for invalid cities
+- Responsive layout for desktop and mobile
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Learning Purpose
+
+This project helps you practice:
+
+- React Hooks (`useState`, `useEffect`)
+- Component-based architecture
+- Handling API requests with Axios
+- Conditional rendering
+- Responsive UI design
+- Error handling
+- State management in React
